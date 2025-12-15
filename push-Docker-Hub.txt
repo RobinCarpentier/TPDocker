@@ -1,0 +1,21 @@
+J'ai réussi à mettre mon image sur mon compte Docker Hub
+
+docker tag tpdocker_backend princeniraboret/webapp-backend:late
+st
+docker push princeniraboret/webapp-backend:latest
+The push refers to repository [docker.io/princeniraboret/webapp-backend]
+46586e5a396c: Pushed 
+82ab1e1da74d: Pushed 
+c6b6d11f000e: Pushed 
+61b83bf0de98: Pushed 
+614db0c0a156: Pushed 
+5aa68bbbc67e: Pushed 
+latest: digest: sha256:d759a53b2b01ea0a3ae4b7796e5f2b48ff1b5e9c4a46f709c2b7c547c901f1bf size: 1574
+docker pull princeniraboret/webapp-backend:latest
+latest: Pulling from princeniraboret/webapp-backend
+Digest: sha256:d759a53b2b01ea0a3ae4b7796e5f2b48ff1b5e9c4a46f709c2b7c547c901f1bf
+Status: Image is up to date for princeniraboret/webapp-backend:latest
+docker.io/princeniraboret/webapp-backend:latest
+docker images | grep webapp-backend
+WARNING: This output is designed for human readability. For machine-readable output, please use --format.
+princeniraboret/webapp-backend:latest       29d273e98d1d        137MB             0B   U    

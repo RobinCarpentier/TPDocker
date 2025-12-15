@@ -1,0 +1,99 @@
+J'ai nettoyé complètement Docker :
+
+docker-compose down -v
+docker system prune -a
+Stopping tpdocker_frontend_1 ... done
+Stopping tpdocker_backend_1  ... done
+Stopping tpdocker_db_1       ... done
+Removing tpdocker_frontend_1 ... done
+Removing tpdocker_backend_1  ... done
+Removing tpdocker_db_1       ... done
+Removing network tpdocker_app-network
+Removing volume tpdocker_db-data
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+deleted: sha256:b76e73eeb9266ce6d8d9fae76819dcb162b92aafd07ec215241cd2121a401bc9
+deleted: sha256:dd2617fb5be442add278e7dffda533cff1d15651a27cbf84a266bbc709a7c4ee
+deleted: sha256:0ea923ecb0a6477210937698fd5419bfcc20643a127eb4e1a500b8583ebfacf8
+untagged: tpdocker_backend:latest
+untagged: princeniraboret/webapp-backend:latest
+untagged: princeniraboret/webapp-backend@sha256:d759a53b2b01ea0a3ae4b7796e5f2b48ff1b5e9c4a46f709c2b7c547c901f1bf
+untagged: robincarpentier2003/webapp-backend:latest
+untagged: username/webapp-backend:latest
+deleted: sha256:29d273e98d1d94372f5e61ccf54db1ccd3025081a9b701d62a7d4a3834554978
+deleted: sha256:81b5ba6626b7e4ab98909523b5832fce8b9982e191599665c81b2001c53ffaae
+untagged: tpdocker-frontend:latest
+deleted: sha256:a67933325d4d09c3a1cf57f8a0dc8fb8834105055efaa6fe9dcd3c63980de3f7
+deleted: sha256:4bc096c97010edd89acc64d9c7e1e48fa126a45c2692c12b0b54f86cec3e009c
+deleted: sha256:3ee21017506f1b000df25a5ecb972f0f93d7aaa79842dfeb47d0f5a88fe1a193
+untagged: tpdocker_frontend:latest
+deleted: sha256:464f49639079b5bae8613b72c972bc8a530c076c5feae6d0f76f16c2806c190b
+deleted: sha256:b0f2f686ea59a41320cac603af9112fddd30c1c0900757558b1c27c51b24e1a4
+untagged: tpdocker-backend:latest
+deleted: sha256:5dd91909af1bdf15a5b94174409c177532837b4a6b17a86e9c25991bdc17c946
+untagged: postgres:16-alpine
+untagged: postgres@sha256:a5074487380d4e686036ce61ed6f2d363939ae9a0c40123d1a9e3bb3a5f344b4
+deleted: sha256:52f87503b2fe5ad2e0d209b1a55830db42eb3ecd3eaf1b583accb0091ab30bff
+deleted: sha256:b38c7204d66bd55230a0a2ae4b70e6e1c9158ae004ecf41f116c942bc3d96ef7
+deleted: sha256:3cc74667f1ceea51e0d7b24f401586e3b703ae3830fc54310d1b2aa1a5224a12
+deleted: sha256:97db039d4c77f68bf6a586d4ce652c5303c81c9bdb88ae17a2cfde4a31162e84
+deleted: sha256:742157c8404e531d2005547a61ed7f96c1ead58a29420547c9b7eb1a47540f44
+deleted: sha256:a9cbddae74984abb5a50011c8ada9dcbe13e9ad0a2b8720d55f3b59976595978
+deleted: sha256:9ffc21886a98654a72f64c2300533aa7bef87929d314b1e85c05f9ad73999afd
+deleted: sha256:55cebe457886db385505b07100a32b9737f9b931cd08840442554b3c2e87704c
+deleted: sha256:91876a5d2571fcf72e077f120e6e0a451b513b6e4c07a626ddfc92fab95d0b0a
+deleted: sha256:0d520d944f3d443cf228fc007138bb948869ec9b27f5cbcbd928e27670fe49d1
+deleted: sha256:2c63e1d764ac4d79634e3bcc25e8c1a1166806759cfb3f26c302c9cb02b5aa0e
+deleted: sha256:714cafa0e0e79d96f1954736dbc73917cb9299d7377c9e946b6adcdc102b7e10
+deleted: sha256:2e13183f9258ad6576c9e6334a6b50b09ebe7dbe4f83e17e94834aa4b3ca9741
+deleted: sha256:8acd8c29c08b61bc9e82796bbd7a86d1a05870d7a8dd76f539ea262d3cb36397
+
+Deleted build cache objects:
+r0u47c3frf4k4kkzepwfwgo72
+judmv1twu1jc3pox89lk642a8
+iwanphwejx02qbbfto5jtqzv8
+m96l52vu713ig88fdbvohkgcd
+w7hswx6d5om3spdrq5u4yc3i3
+2yiz2zpt3gfi599o2n5lioawv
+mco1ve5nlpxnfz7lijil2u1jg
+xr57q5g4vwacgidfz40xt7skh
+qt22slwewn108pj6jmbyw34jr
+1owwbfi0c9qlo1b6a7g9lsnx5
+plxfj5fr6s1mx3j0yj7dqir7d
+qsc9fv6ffz9mo866xsmyxh1ap
+0rs02zvi9cmahctxu0n2au272
+m1kicwrr5u9csocea7pnsqhlm
+dy1t9vps5zmfmjlerbtbc60j1
+7q5wiszlkdvnf8ng31j1okokz
+ojdl5nn2r14ijnyos0bn79s37
+moynmn0trtj7r2i1zpc9ny6v8
+xic3ezh59k27u3cnxaq2c6iej
+8xc646ys7cj7q22rsbtbcl0hc
+etae4hxk7dkzdbq8bel0xum3h
+zwpw62yiqrzrga1xss5bo2z35
+6s9bss7g693li6ued3s0kor83
+tjh4tkvpzgg2nfu0dkoxloi2e
+tess9bi8van1s6cc5um64gm7f
+dxcrqczatp511ebawuw0400qs
+yjmj7a7922hbf3qg38lcvrthi
+cb02muny50fxqeysvp8lecbdg
+sr69rid9et6te85lhei5azos1
+4ur97hjdsjyxw7n960t5ovi48
+0c9s4htkeb2xwb81pksv5fg56
+bjjxntpesfm7oih0uh2lgkcev
+y4z9m8ansn66sdu3at3cb61ra
+7w4drhl1xfkez8h7epni5f8bc
+tm64lvozic2y68cj6k60vr4vw
+2ed5xs5f2i9wmlntzuym079c1
+ia8qo5ppfvi8z7rwv9ie3f9ed
+soc9p0np4edo25m2u7ubyxz1i
+ulvaaq2fxbx5cvszalb4ojzcn
+opg2c67b58u7uh40skhxnmv02
+
+Total reclaimed space: 297.6MB

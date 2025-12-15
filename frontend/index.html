@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter App</title>
+</head>
+<body>
+  <h1>Counter App</h1>
+  <h2>Counter: <span id="counter">0</span></h2>
+  <button style="background-color: green; color: white;" onclick="incrementCounter()">+</button>
+  <button style="background-color: red; color: white;" onclick="decrementCounter()">-</button>
+
+  <script>
+    const BACKEND_URL = "http://localhost:3000";
+
+    async function loadCounter() {
+      const res = await fetch(`${BACKEND_URL}/counter`);
+      const data = await res.json();
+      document.getElementById("counter").textContent = data.counter;
+    }
+
+    async function incrementCounter() {
+      await fetch(`${BACKEND_URL}/counter/incr`, { method: "POST" });
+      loadCounter();
+    }
+
+    async function decrementCounter() {
+      await fetch(`${BACKEND_URL}/counter/decr`, { method: "POST" });
+      loadCounter();
+    }
+
+    loadCounter();
+  </script>
+</body>
+</html>
