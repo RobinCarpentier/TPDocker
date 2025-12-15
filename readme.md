@@ -6,16 +6,16 @@ Cette application Docker consiste en :
 - <b>Base de donnée</b> : C'est une base de donnée Postgres, qui est persistant via volume Docker (quand on recharge la page, la valeur reste la même). Elle est non exposée à l'extérieur pour la sécurité.
 
 ## 2 - Build du projet
-On build le projet avec : <br>
+On build le projet avec : 
 `docker-compose build`
 
 ## 3 - Run/Exécution
-On lance l'application complète avec : <br>
+On lance l'application complète avec : 
 `docker-compose up`
 
 On peut aussi utiliser `-d` pour que ça tourne en arrière-plan.
 
-On vérifie ensuite les containers avec : <br>
+On vérifie ensuite les containers avec : 
 `docker ps`
 
 Pour tester l'API en backend : 
