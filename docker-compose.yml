@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   db:
-    image: postgres:16-alpine
+    image: postgres:18-alpine
     environment:
       POSTGRES_USER: appuser
       POSTGRES_PASSWORD: apppassword
@@ -13,6 +13,7 @@ services:
       - app-network
 
   backend:
+    image: docker.io/princeniraboret/webapp-backend:latest
     build: ./backend
     environment:
       DB_HOST: db
@@ -27,6 +28,7 @@ services:
       - app-network
 
   frontend:
+    image: docker.io/princeniraboret/webapp-frontend:latest
     build: ./frontend
     ports:
       - "8080:80"

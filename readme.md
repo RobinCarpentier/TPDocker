@@ -3,7 +3,7 @@
 Cette application Docker consiste en : 
 - <b>Frontend</b> : C' est une interface web simple (lien -> http://localhost:8080) avec un compteur qui s'incrémente avec le bouton "+" et se désincrémente avec le bouton "-".
 - <b>Backend</b> : On utilise une API en Node.js (lien -> http://localhost:3000) qui permet de gérer le compteur et stocker la valeur dans la base de donnée Postgres.
-- <b>Base de donnée</b> : C'est une base de donnée Postgres, qui est persistant via volume Docker (quand on recharge la page, la valeur reste la même). Elle est non exposée à l'extérieur pour la sécurité.
+- <b>Base de données</b> : C'est une base de données Postgres, qui est persistant via volume Docker (quand on recharge la page, la valeur reste la même). Elle est non exposée à l'extérieur pour la sécurité.
 
 ## 2 - Build du projet
 On build le projet avec : 
